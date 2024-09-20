@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/* header */
+header{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    gap: 220px;
+    
+}
+
+.logo{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.menu{
+    display: flex;
+    margin-top: 40px;
+    gap: 22px;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(78, 76, 76, 0.849);
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    color: rgba(27, 85, 27, 0.568);
+    box-shadow: 2px 2px 4px 5px;
+}
+/* main */
+/* 1 */
+.first{
+    width: 100%;
+    height: 800px;
+    background:url(./dots-lg.svg) rgba(255, 255, 255, 0.555);
+    background-size: cover;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.search{
+    height: 500px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.555);
+    display:flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items:center;
+    text-align: center;
+    padding: 220px 50px;
+    gap: 30px;
+}
+
+.search h1{
+    font-size: 40px ;
+    color: rgba(12, 83, 12, 0.651);
+}
+
+.search h4{
+    font-size: 20px;
+    color: rgba(30, 163, 30, 0.781);
+}
+
+.search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin-left: 80px;
+    background-color: rgba(226, 236, 238, 0.856);
+    z-index:1 ;
+    gap: 20px;
+    box-shadow: 2px 4px 5px 2px rgba(100, 148, 237, 0.712);
+    border-radius: 5px;
+    border: none;
+}
+
+.search input[type="search"] {
+    padding: 10px; 
+    max-width: 540px; 
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(226, 236, 238, 0.856);
+}
+
+.search input[type="button"] {
+    padding: 10px; 
+    max-width: 220px; 
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(12, 123, 187, 0.76);
+    border: none;
+    cursor: pointer; 
+}
+
+.search input[type="button"]:hover{
+    background-color: rgba(10, 160, 110, 0.699);
+    box-shadow: 2px 2px 4px 5px white;
+}
+
+.img{
+    height: 500px;
+    width: 500px;
+    background:url(./img20.jpg);
+    background-size: cover;
+}
+
+/* 2 */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(248, 251, 252, 0.959);
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.content-box{
+    width: 100%;
+    height: 700px;
+    padding-left: 280px;
+    padding-right: 220px;
+    background-color: rgba(248, 251, 252, 0.959);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.content{
+    background-color:  rgba(234, 245, 248, 0.959);
+    width: 320px;
+    height: 220px;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 5px rgba(209, 237, 245, 0.959);
+    text-align: center;
+}
+
+.img-fitrst{
+    width: 540px;
+    height: 540px;
+    background: url(./img21.jpg);
+    background-size: cover;
+}
+
+/* 3 */
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 20px 20px;
+    background: linear-gradient(90deg, rgba(64,167,74,0.21612394957983194) 0%, rgba(64,167,74,0.4822303921568627) 8%,
+     rgba(29,253,243,0.38699229691876746) 53%, rgba(80,121,221,0.3785889355742297) 97%);
+}
+
+.card{
+    width: calc(25% - 40px);
+    height: 250px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background: no-repeat  center ;
+    box-shadow: 2px 2px 4px 5px rgba(73, 77, 78, 0.705);
+}
+
+.card:hover{
+    box-shadow: 4px 5px 7px 9px white;
+    transform: translatey(-20px);
+}
+
+@media (max-width:768px){
+    .card{
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width:480px){
+    .card{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .first .second {
+        flex-direction: column;
+    }
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(44, 94, 150);
+}
+
+.company .Documentation, li a{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
